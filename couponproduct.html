@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/couponproduct.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/swiper.js"></script>
+    <script type="text/javascript" src="./js/couponproduct.js"></script>
+
+    <script type="text/html" id="product_con">
+        <ul>
+            {{each resule as value }}
+                <li class="clearfix">
+                    <span class="product_l" id="{{value.couponProductId}}">
+                        {{#value.couponProductImg}}
+                    </span>
+                    <div class="product_r">
+                        <h4>{{value.couponProductName}}</h4>
+                        <span class="press">{{value.couponProductPrice}}</span>
+                        <p class="time">{{value.couponProductTime}}</p>
+                        <b> &gt;</b>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header>
+    <a href="javascript:void(0)" class="back">
+        <span>&lt;</span>
+
+        <p>优惠券</p>
+    </a>
+    <a href="javascript:void(0)" class="appDown"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<!--内容-->
+<section class="product-content clearfix">
+
+</section>
+
+<!--logoin-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+<!--遮罩层-->
+<div class="cover" style="display: none;">
+    <div class="cover_img">
+        <img src="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" alt=" 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券">
+    </div>
+    <span class="cover_left"> &lt;</span>
+    <span class="cover_right">&gt;</span>
+</div>
+</body>
+</html>

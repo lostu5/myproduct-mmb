@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/baicaijia.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/swiper.js"></script>
+    <script type="text/javascript" src="./js/baicaijia.js"></script>
+
+    <script type="text/html" id="baicai-titleId">
+        {{each result as value }}
+        <div class="swiper-slide" titleId="{{value.titleId}}"><span>{{value.title}}</span></div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="baicaijiacon">
+        {{each result as value i}}
+        <li>
+            <div class="recom-l clearfix">
+                <a href="#">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="recom-r ">
+                <h5>{{#value.productName}}</h5>
+                <span>{{#value.productPrice}}</span>
+                <div class="progress_bar clearfix">
+
+                    {{#value.productCouponRemain}}</div>
+
+            </div>
+            <div class="recom-r-b clearfix">
+                <div class="getpaper clearfix">{{#value.productCoupon}}</div>
+                <div class="topay clearfix">{{#value.productHref}}</div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header>
+    <a href="javascript:void(0)" class="back">
+        <span>&lt;</span>
+
+        <p>白菜价-淘宝内部券</p>
+    </a>
+    <a href="javascript:void(0)" class="appDown"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<!--导航-->
+<div id="topNav" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide active"><span>推荐</span></div>
+        <div class="swiper-slide"><span>热点</span></div>
+        <div class="swiper-slide"><span>深圳</span></div>
+        <div class="swiper-slide"><span>视频</span></div>
+        <div class="swiper-slide"><span>社会</span></div>
+        <div class="swiper-slide"><span>娱乐</span></div>
+        <div class="swiper-slide"><span>科技</span></div>
+        <div class="swiper-slide"><span>问答</span></div>
+        <div class="swiper-slide"><span>汽车</span></div>
+        <div class="swiper-slide"><span>财经</span></div>
+        <div class="swiper-slide"><span>军事</span></div>
+        <div class="swiper-slide"><span>体育</span></div>
+        <div class="swiper-slide"><span>段子</span></div>
+        <div class="swiper-slide"><span>美女</span></div>
+        <div class="swiper-slide"><span>国际</span></div>
+        <div class="swiper-slide"><span>趣图</span></div>
+        <div class="swiper-slide"><span>健康</span></div>
+        <div class="swiper-slide"><span>特产</span></div>
+        <div class="swiper-slide"><span>房产</span></div>
+    </div>
+</div>
+
+
+<!--商品推荐-->
+<section class="recommend clearfix">
+    <ul></ul>
+    <ul class="recommul">
+        <!--插入的商品列表-->
+
+
+    </ul>
+</section>
+<!--logoin-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

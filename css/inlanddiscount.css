@@ -1,0 +1,82 @@
+/*标题*/
+header a {
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
+}
+header a span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+  font-family: cursive;
+  z-index: 5;
+  font-size: 30px;
+}
+header a p {
+  text-align: center;
+}
+header .appDown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*内容*/
+.inlanddiscount-content {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.inlanddiscount-content #loading {
+  color: #ff1c4d;
+  font-weight: 700;
+  margin: 10px 10px 0 ;
+}
+.inland-ul > li {
+  width: 50%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  min-height: 280px;
+  overflow: hidden;
+}
+.inland-ul > li section {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+}
+.inland-ul > li img {
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.inland-ul > li div {
+  text-align: left;
+}
+.inland-ul > li div p {
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  overflow: hidden;
+  color: #000;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.inland-ul > li div span {
+  color: #FF6C00;
+  font-size: 14px;
+  display: block;
+  height: 20px;
+  overflow: hidden;
+}
+.inland-ul > li div s {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}

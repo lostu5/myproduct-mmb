@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/compare.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/category.js"></script>
+    <script type="text/html" id="productlist">
+        {{each result as value}}
+        <div class="productlist">
+            <h4 productId="{{value.titleId}}">{{value.title}}<span class="iconfont icon-xiangshangjiantouarrowup"></span></h4>
+            <div class="category" style="display: none"></div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="productArct">
+        <ul class="row">
+        {{each result as value}}
+            <li class="col-xs-4"><a href="./productList.html?categoryid={{value.categoryId}}&categoryName={{value.category}}" categoryId="{{value.categoryId}}">{{value.category}}</a></li>
+        {{/each}}
+        </ul>
+    </script>
+    <title></title>
+</head>
+<body>
+<!--头部-->
+<header>
+    <a href="index.html">
+        <img src="./images/header_logo.png" alt="" class="header_logo" title="慢慢买"/>
+    </a>
+    <a href="javascript:void(0)"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<!--搜索-->
+<div class="search">
+    <form action="">
+        <input type="search" placeholder="请输入你想比价的商品" class="inputs"/>
+        <input type="submit" value="搜索" class="search-b"/>
+    </form>
+</div>
+<!--商品分类-->
+<section class="tottleProduct">
+    <div class="productlist">
+        <h4>大家电  <span></span></h4>
+        <div>
+            <ul class="row">
+                <li class="col-xs-4">电视</li>
+                <li class="col-xs-4">空调</li>
+                <li class="col-xs-4">影院</li>
+                <li class="col-xs-4">电视</li>
+                <li class="col-xs-4">空调</li>
+                <li class="col-xs-4">影院</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!--logoin-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#" > <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/inlanddiscount.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/inlanddiscount.js"></script>
+
+    <script type="text/html" id="inlanddiscount-con">
+        {{each result as value}}
+        <li productId={{value.productId}}>
+            <section>
+                {{#value.productImg}}
+            </section>
+            <div>
+                <p>{{value.productName}}</p>
+                <span>{{value.productPrice}}</span>
+                <s>{{value.productFrom}} | {{value.productTime}}</s>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <title>慢慢买</title>
+</head>
+<body>
+<header>
+    <a href="javascript:void(0)" class="back">
+        <span>&lt;</span>
+
+        <p>国内折扣</p>
+    </a>
+    <a href="javascript:void(0)" class="appDown"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<section class="inlanddiscount-content clearfix">
+    <ul class="inland-ul clearfix">
+        <li productId=>
+            <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+            <div>
+                <p>西域美农新疆特产五星和田红枣250g*2</p>
+                <span>19.8元(5件99元)</span>
+                <s>京东商城 | 10-22 13:28</s>
+            </div>
+        </li>
+        <li productId=productId>
+            <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+            <div>
+                <p>西域美农新疆特产五星和田红枣250g*2</p>
+                <span>19.8元(5件99元)</span>
+                <s>京东商城 | 10-22 13:28</s>            </div>
+        </li>
+    </ul>
+
+</section>
+
+<!--底部-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+
+
+</body>
+</html>

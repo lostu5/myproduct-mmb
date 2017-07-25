@@ -1,0 +1,129 @@
+@baseFontSize: 32;
+//基于视觉稿横屏尺寸/100得出的基准font-size
+.px2rem(@name, @px) {
+  @{name}: @px / @baseFontSize * 1rem;
+}
+
+/*头部*/
+header {
+  .px2rem(height, 40);
+  background-color: #FF841D;
+  text-align: center;
+  span {
+    font-size: 30/32rem;
+    color: #fff;
+    font-family: cursive;
+    .px2rem(line-height, 40);
+    .px2rem(margin-left, 10);
+    font-weight: 700;
+    float: left;
+  }
+  h3 {
+    display: inline-block;
+    .px2rem(font-size, 25);
+    .px2rem(line-height, 40);
+    .px2rem(margin, 0);
+    color: #fff;
+  }
+  img {
+    float: right;
+    .px2rem(height, 30);
+    .px2rem(width, 30);
+    .px2rem(margin-right, 10);
+    .px2rem(margin-top, 5);
+  }
+}
+
+/*内容*/
+section {
+  .px2rem(padding, 20);
+  .shopIco {
+    float: left;
+    a {
+      display: block;
+      background-color: #F4F4F4;
+      .px2rem(height, 30);
+      .px2rem(line-height, 20);
+      .px2rem(padding, 5);
+      float: left;
+      .px2rem(margin, 6);
+      .px2rem(margin-bottom, 20);
+      img {
+        float: left;
+        .px2rem(height, 20);
+        .px2rem(width, 20);
+        .px2rem(line-height, 20);
+        vertical-align: baseline;
+      }
+      p {
+        .px2rem(padding-left, 5);
+        .px2rem(font-size, 12);
+        float: left;
+        color: #ae3bff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/*底部*/
+footer {
+  .footer-login {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5/32rem;
+    div {
+      float: left;
+      width: 33.33%;
+      padding: 5/32rem;
+      box-sizing: border-box;
+      font-size: 14/32rem;
+      background-color: #ddd;
+    }
+    .foot-register {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  }
+  display: block;
+  text-align: center;
+  p {
+    line-height: 20/32rem;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.sidetoTop {
+  position: fixed;
+  right: 20/32rem;
+  bottom: 10/32rem;
+  width: 18/32rem;
+  height: 66/32rem;
+  background: url("../images/rocket_up.png") 0 0 no-repeat;
+  background-size:cover;
+  display: none;
+}
+  [data-dpr="1"] .sidetoTop {
+  transform:scale(1.5);
+}
+  [data-dpr="2"] .sidetoTop {
+  transform:scale(1.5);
+}
+  [data-dpr="3"] .sidetoTop {
+  transform:scale(1.5);
+}

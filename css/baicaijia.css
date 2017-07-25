@@ -1,0 +1,230 @@
+body {
+    background-color: #F5F5F5;
+  /*  height: 3000px;*/
+}
+/*标题*/
+header a {
+    font-size: 22px;
+    color: #fff;
+    line-height: 30px;
+}
+header a span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-family: cursive;
+    z-index: 5;
+    font-size: 30px;
+}
+header a p {
+    text-align: center;
+}
+header .appDown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/*导航*/
+#topNav {
+    width: 100%;
+    overflow: hidden;
+    font: 14px/32px hiragino sans gb, microsoft yahei, simsun;
+    border-bottom:1px solid #f8f8f8;
+}
+#topNav .swiper-slide {
+    padding: 0 5px;
+    letter-spacing:0px;
+    width:4rem;
+    text-align:center;
+}
+#topNav .swiper-slide span{
+    transition:all .3s ease;
+    display:block;
+}
+#topNav .active span{
+    transform:scale(1.1);
+    color:#FF2D2D;
+}
+
+/*�商品推荐�*/
+.recommend {
+    width: 100%;
+    background-color: #fff;
+}
+.recommend li {
+    padding: 0px 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+.recommend h3 ,.ranking h3{
+    width: 50px;
+    width: 100%;
+    background-color: #FF9000;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.recommend h3 a img ,.ranking h3 a img  {
+    width: 25px;
+    margin: 5px;
+}
+.recommend .recom-l {
+    float: left;
+    margin-left: 4px;
+    margin-top: 16px;
+}
+.recommend .recom-l img {
+    width: 130px;
+    height: 130px;
+}
+.recommend .recom-r {
+    padding-left: 140px;
+    position: relative;
+}
+.recommend .recom-r h5 {
+    padding-left: 10px ;
+    padding-top: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.recommend .recom-r h5,.recommend .recom-r h5 span{
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 5px;
+    margin: 0px;
+    color: #000;
+}
+.recommend .recom-r span {
+    padding-bottom: 6px;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #FC353A;
+}
+.recommend .recom-r span i {
+    font-size: 16px;
+}
+.recommend .recom-r span em {
+    font-size: 14px;
+    padding: 0 4px;
+}
+.recommend .recom-r  span del {
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+.progress_bar {
+    width: 100%;
+    height: 26px;
+    position: relative;
+}
+.progress_bar  .progress {
+    margin-bottom: 10px;
+}
+.progress_bar .bar {
+
+}
+.progress_bar .bar b {
+    width: 80px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f00;
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.progress_bar .bar .goquan {
+
+}
+.bar i {
+    width: 50%;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #FFB7B7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar i em {
+    width: 100%;
+    display: block;
+    height:100%;
+    background-color: #FC353A;
+    border-radius: 28%;
+}
+.progress_bar .bar i span {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+.recom-r-b {
+    width: 100%;
+    /*padding-left: 110px;*/
+}
+.recom-r-b .getpaper {
+    overflow: hidden;
+
+    float: left;
+    padding: 2px;
+    border: 1px dotted #e4393c;
+    line-height: 24px;
+    font-size: 12px;
+    margin-left: 6px;
+    margin-top: 8px;
+    width: 100px;
+    height: 24px;
+}
+.recom-r-b .getpaper a {
+    z-index: 5;
+    position: absolute;
+}
+.recom-r-b .topay a {
+    float: right;
+    position: relative;
+    z-index: 5;
+    margin-right: 5px;
+    background-color: #FF5E5D;
+    color: #fff;
+    border-radius: 2px;
+    line-height: 26px;
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.recommend .recom-r a {
+    display: block;
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 25px;
+    padding-right: 15px;
+    font-size: 12px;
+}
+.recommend .more{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.recommend .more a {
+    display: block;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+    font-size: 12px;
+}
+
+
+.hidding {
+    display: none;
+}

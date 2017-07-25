@@ -1,0 +1,117 @@
+/*头部*/
+header {
+  height: 1.25rem;
+  background-color: #FF841D;
+  text-align: center;
+}
+header span {
+  font-size: 0.9375rem;
+  color: #fff;
+  font-family: cursive;
+  line-height: 1.25rem;
+  margin-left: 0.3125rem;
+  font-weight: 700;
+  float: left;
+}
+header h3 {
+  display: inline-block;
+  font-size: 0.78125rem;
+  line-height: 1.25rem;
+  margin: 0rem;
+  color: #fff;
+}
+header img {
+  float: right;
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin-right: 0.3125rem;
+  margin-top: 0.15625rem;
+}
+/*内容*/
+section {
+  padding: 0.625rem;
+}
+section .shopIco {
+  float: left;
+}
+section .shopIco a {
+  display: block;
+  background-color: #F4F4F4;
+  height: 0.9375rem;
+  line-height: 0.625rem;
+  padding: 0.15625rem;
+  float: left;
+  margin: 0.1875rem;
+  margin-bottom: 0.625rem;
+}
+section .shopIco a img {
+  float: left;
+  height: 0.625rem;
+  width: 0.625rem;
+  line-height: 0.625rem;
+  vertical-align: baseline;
+}
+section .shopIco a p {
+  padding-left: 0.15625rem;
+  font-size: 0.375rem;
+  float: left;
+  color: #ae3bff;
+  font-weight: 700;
+}
+/*底部*/
+footer {
+  display: block;
+  text-align: center;
+}
+footer .footer-login {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.15625rem;
+}
+footer .footer-login div {
+  float: left;
+  width: 33.33%;
+  padding: 0.15625rem;
+  box-sizing: border-box;
+  font-size: 0.4375rem;
+  background-color: #ddd;
+}
+footer .footer-login .foot-register {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+footer p {
+  line-height: 0.625rem;
+}
+.red {
+  color: red;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.sidetoTop {
+  position: fixed;
+  right: 0.625rem;
+  bottom: 0.3125rem;
+  width: 0.5625rem;
+  height: 2.0625rem;
+  background: url("../images/rocket_up.png") 0 0 no-repeat;
+  background-size: cover;
+  display: none;
+}
+[data-dpr="1"] .sidetoTop {
+  transform: scale(1.5);
+}
+[data-dpr="2"] .sidetoTop {
+  transform: scale(1.5);
+}
+[data-dpr="3"] .sidetoTop {
+  transform: scale(1.5);
+}

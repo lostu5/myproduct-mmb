@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+    <script type="text/html" id="menulist">
+        {{each result as value i}}
+        <li >
+            <a href="{{value.titlehref}}">
+                {{#value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="recommlist">
+        {{each result as value i}}
+        <li productid={{value.productId}}>
+            <div class="recom-l">
+                <a href="">
+                    {{#value.productImgSm}}
+                </a>
+            </div>
+
+            <div class="recom-r">
+                <h5>{{value.productName}}</h5>
+                <span>{{value.productPinkage}}</span>
+                <s>{{value.productFrom}}|{{value.productTime}}</s>
+                <a href="#" class="iconfont icon-comments"> <em>{{value.productComCount.replace('有', '').replace('人评论', '')}}</em></a>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header>
+    <a href="javascript:void(0)">
+        <img src="./images/header_logo.png" alt="" class="header_logo" title="慢慢买"/>
+    </a>
+    <a href="javascript:void(0)"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<!--搜索-->
+<div class="search">
+    <form action="">
+        <input type="search" placeholder="请输入你想比价的商品" class="inputs"/>
+        <input type="submit" value="搜索" class="search-b"/>
+    </form>
+</div>
+<!--菜单-->
+<section class="menu">
+    <ul class=" menuul clearfix">
+    </ul>
+</section>
+<!--商品推荐-->
+<section class="recommend clearfix">
+    <h3>超值折扣推荐    <a href="javascript:void(0)">
+        <img src="./images/header_app.png" alt="" class="header_app"/></a></h3>
+    <ul class="recommul">
+        <!--插入的商品列表-->
+    </ul>
+    <div class="more"><a href="moneyctrl.html">更多优惠信息&gt;&gt;</a></div>
+</section>
+<!--排行-->
+<section class="ranking">
+    <h3>品牌排行    <a href="javascript:void(0)">
+        <img src="./images/header_app.png" alt="" class="header_app"/></a></h3>
+</section>
+<!--logoin-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#" > <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+
+
+
+</body>
+</html>

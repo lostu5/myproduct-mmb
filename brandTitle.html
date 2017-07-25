@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--<script type="text/javascript" src="./js/flexible.js"></script>-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/brandTitle.js"></script>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/template.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/brandTitle.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="./css/bootstrap/css/bootstrap.css"/>
+    <!--第一个拼接-->
+    <script type="text/html" id="brandTitle">
+        {{each result as value }}
+        <li brandTitleId={{value.brandTitleId}}> {{value.brandTitle}} <span> &gt;&gt;</span>
+        </li>
+        {{/each}}
+    </script>
+    <!--第二个拼接-->
+    <script type="text/html" id="brandTitle-lis">
+        <ul class="product-ul-lis">
+            {{each result as value i}}
+            <li brandTitleId={{value.brandTitleId}}>
+                <s>{{i+1}}</s>
+
+                <div>
+                    <h4>{{value.brandName}}</h4>
+
+                    <p>{{value.brandInfo}}</p>
+                </div>
+                <span> &gt;</span>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <!--第三个拼接-->
+    <script type="text/html" id="product-lis-img">
+        <ul class="product-ul-img">
+            {{each result as value i}}
+            <li productId={{value.productId}}>
+                <div class="product-l">
+                    {{#value.productImg}}
+                </div>
+                <div class="product-r">
+                    <h4>{{value.productName}}</h4>
+                    <span>{{value.productPrice}}</span>
+
+                    <div class="star">
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                    </div>
+                    <p>{{value.productQuote}} {{value.productCom}}</p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <title></title>
+    <!--第四个拼接-->
+    <script type="text/html" id="product-lis-com">
+            {{each result as value i}}
+            <div class="progress-com">
+                <div class="clearfix">
+                    <span>{{value.comName}}:</span>
+                    <div class="star">
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                        <b>★</b>
+                    </div>
+                    <s>{{value.comTime}}</s>
+                </div>
+                <div class="by_from">{{value.comFrom}}</div>
+                <p>{{value.comContent}}</p>
+            </div>
+            {{/each}}
+    </script>
+    <title></title>
+</head>
+<body>
+<header>
+    <span onclick="javascript:window.history.go(1);"> &lt;</span>
+
+    <h2>热门品牌排行</h2>
+    <img src="./images/header_app.png" alt=""/>
+</header>
+<section class="search">
+    <input type="search" placeholder="请输入你想比价的商品"/>
+    <input type="button" value="搜索"/>
+</section>
+<nav class="product-nav">
+    <div>
+        <a href="index.html"> 首页</a>
+        &gt;
+        <a href=brandTitle.html>全部分类</a>
+        &gt;
+    </div>
+</nav>
+
+<nav class="product-lis-nav">
+    <div>
+        <h3>热门品牌排行</h3>
+    </div>
+</nav>
+<section class="product-lis product-lis-all">
+    <ul class="product-ul">
+        {{each result as value i}}
+        <li productId={{value.productId}}>
+            <div class="product-l">
+                {{#value.productImg}}
+            </div>
+            <div class="product-r">
+                <h4>{{value.productName}}</h4>
+                <span>{{value.productPrice}}</span>
+
+                <div class="star">
+                    <b>★</b>
+                    <b>★</b>
+                    <b>★</b>
+                    <b>★</b>
+                    <b>★</b>
+                </div>
+                <p>{{value.productQuote}} {{value.productCom}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+<div class="progress-com-cov" style="display: block">
+
+</div>
+
+
+<footer>
+    <div class="row footer-loge">
+        <div class="col-xs-4">登录</div>
+        <div class="col-xs-4 register">注册</div>
+        <div class="col-xs-4"><span
+                class=" glyphicon glyphicon-arrow-up"></span>返回顶部
+        </div>
+    </div>
+    <p><span class="red">手机app下载</span> 慢慢买手机版-掌上比价平台
+        m.manmanbuy.com</p>
+</footer>
+
+</body>
+</html>

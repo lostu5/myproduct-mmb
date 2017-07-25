@@ -1,0 +1,107 @@
+body {
+    background-color: #F5F5F5;
+  /*  height: 3000px;*/
+}
+
+/*菜单*/
+.menu ul{
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+.menu ul li {
+    width: 25%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.menu ul li a {
+    display: block;
+}
+.menu ul li img {
+    width: 70%;
+}
+.menu ul li p {
+    color: #000000;
+    font: 400 12px microsoftYahe;
+}
+/*商品推荐*/
+.recommend {
+    width: 100%;
+    background-color: #fff;
+}
+.recommend li {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+.recommend h3 ,.ranking h3{
+    width: 50px;
+    width: 100%;
+    background-color: #FF9000;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 35px;
+    margin-top: 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.recommend h3 a img ,.ranking h3 a img  {
+    width: 25px;
+    margin: 5px;
+}
+.recommend .recom-l {
+    float: left;
+    margin-left: 5px;
+}
+.recommend .recom-l img {
+    width: 100px;
+}
+.recommend .recom-r {
+    padding-top: 10px;
+    padding-left: 110px;
+}
+.recommend .recom-r h5{
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 5px;
+}
+.recommend .recom-r span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    color: #E92322;
+}
+.recommend .recom-r s {
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.recommend .recom-r a {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+}
+.recommend .more{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.recommend .more a {
+    display: block;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+    font-size: 12px;
+}
+
+
+.hidding {
+    display: none;
+}

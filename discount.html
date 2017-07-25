@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/discount.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/discount.js"></script>
+
+    <script type="text/html" id="money-con">
+        {{each result as value}}
+        <h4>{{#value.productName}}</h4>
+        <a href="" class="money-con-smpic">{{#value.productImg}}</a>
+        <span>{{#value.productFrom}} {{#value.productTime}} {{#value.productTips}}</span>
+        <p class="money-con-p">{{#value.productInfo}}</p>
+        <div class="productImg">{{#value.productImg}}</div>
+        <div style="color: red">{{#value.productPinkage}}</div>
+        {{#value.productCity}}
+        <div class="press">
+            {{value.productPrice}}
+        </div>
+        <a href="https://list.tmall.com/search_product.htm?q={{value.productId}}" target="_blank" class="product-by">前往购买</a>
+        <img src="./images/mmbweixin2.png" alt="" class="mmbwx"/>
+        {{#value.productComment}}
+
+        {{/each}}
+    </script>
+    <title>慢慢买</title>
+</head>
+<body>
+<header>
+    <a href="javascript:void(0)" class="back">
+        <span>&lt;</span>
+
+        <p>国内折扣</p>
+    </a>
+    <a href="javascript:void(0)" class="appDown"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<section class="money-content">
+    <!--渲染内容-->
+
+</section>
+
+<!--底部-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+
+
+</body>
+</html>

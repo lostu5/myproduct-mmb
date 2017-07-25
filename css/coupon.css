@@ -1,0 +1,55 @@
+body {
+    background-color: #F5F5F5;
+  /*  height: 3000px;*/
+}
+/*标题*/
+header a {
+    font-size: 22px;
+    color: #fff;
+    line-height: 30px;
+}
+header a span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-family: cursive;
+    z-index: 5;
+    font-size: 30px;
+}
+header a p {
+    text-align: center;
+}
+header .appDown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/*内容*/
+.content {
+    width: 100%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.content ul li {
+    float: left;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 5px 5px;
+    box-sizing: border-box;
+
+}
+.content ul li a {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.content ul li img {
+    width: 50%;
+}
+.content ul li span {
+    display: block;
+    font-size: 14px;
+}

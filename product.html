@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/product.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/compare.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/product.js"></script>
+
+    <script type="text/html" id="product_t">
+        {{each result as value i}}
+        <li class="clearfix">
+            <div><span class="product_talk_name">{{value.comName}}</span>
+                <span class="product_talk_time">{{value.comTime}}</span></div>
+            <div class="product_talk_from">{{value.comFrom}}</div>
+            <div class="product_talk_comContent">{{value.comContent}}</div>
+        </li>
+        {{/each}}
+    </script>
+    <title></title>
+</head>
+<body>
+<!--头部-->
+<header>
+    <a href="javascript:void(0)">
+        <img src="./images/header_logo.png" alt="" class="header_logo" title="慢慢买"/>
+    </a>
+    <a href="javascript:void(0)"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<!--搜索-->
+<div class="search">
+    <form action="">
+        <input type="search" placeholder="请输入你想比价的商品" class="inputs"/>
+        <input type="submit" value="搜索" class="search-b"/>
+    </form>
+</div>
+
+<!--商品列表-->
+<section class="recommend clearfix">
+    <p><a href="index.html">首页&nbsp;</a>&nbsp;&gt;&nbsp; &nbsp;<a href="javascript:void(0)" class="productName"></a>&nbsp;
+        &gt;&nbsp;<a href="javascript:void(0)" class="product_self"></a>&nbsp; &gt;
+        <input type="button" value="筛选"/></p>
+</section>
+<section class="product_content">
+    <h4></h4>
+    <a href="javascript:void(0)"></a>
+    <ul class="row compare">
+        <li class="col-xs-4"><a href="javascript:void(0)">比价购买</a></li>
+        <li class="col-xs-4"><a href="javascript:void(0)">产品参数</a></li>
+        <li class="col-xs-4"><a href="javascript:void(0)">评价(<span class="product_talk_num"></span>)</a></li>
+    </ul>
+    <div></div>
+    <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+</section>
+<section class="product_talk">
+    <div class="product_talk_title">网友评价</div>
+    <ul class="product_talk_list">
+        <li class="clearfix">
+            <div><span class="product_talk_name">胡***朋</span>
+                <span class="product_talk_time">2015/10/6</span></div>
+                <div class="product_talk_from">购买自：亚马逊</div>
+            <div class="product_talk_comContent">我下单主要是奔着防水去的，毕竟游泳时想拍照很不容易。但用了一天，很是失望。单点对焦，经常对不上焦，跑焦。操作性不强，就几个自动模式，光一个光圈模式，但可变换的档数太少，快门更是调不了。微距没宣传的那么好。以前也用过alympus的卡片机，感觉这么多年卡片机没什么升级的。后来用了微单，再用卡片就受不了卡片的这种灰蒙蒙的画质，也受不了全是自动的傻瓜模式，感觉像是小孩子的玩具。不过款式很好看，很酷，蛮重的，有分量。但对不起这价格，价格太高了，你要1200还勉勉强强，用途针对性太局限，仅防水值得考虑，其他的差强人意，比同价位的机子差远了。总的来说，如果你是土豪，可以添一个。如果你有单反，微单，用过这种高级点的货，肯定受不了他的画质，和可掌控性。</div>
+        </li>
+    </ul>
+</section>
+<div class="product_talk_more">
+    <a href="javascript:void (0)">查看更多评价</a>
+</div>
+<!--logoin-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <script type="text/javascript" src="./js/flexible.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/sitenav.js"></script>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="./js/template.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/sitenav.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css"/>
+    <script type="text/html" id="shopIco-con">
+        {{each result as value i}}
+        <a href="{{value.navHref}}"  target=_blank>
+            <img src="{{value.navImg}}" alt=""/>
+            <p>{{value.navTitle}}</p>
+        </a>
+        {{/each}}
+    </script>
+    <title></title>
+</head>
+<body>
+<header>
+    <span> &lt;</span>
+
+    <h3>商场导航</h3>
+    <img src="./images/header_app.png" alt=""/>
+</header>
+<section class="clearfix">
+    <div class="shopIco">
+        <a href="http://union.click.jd.com/jdc?e=&p=AiIBZRprFDJWWA1FBCVbV0IUEEULXg1cAAQJS14M…xkSUGZZHkcCaUJQWiUXVyUDIgRUHF8XCxUDVytrc38i&t=W1dCFBBFC14NXAAECUteDA%3D%3D">
+            <img src="http://misc.manmanbuy.com/images/hzweb/360.png" alt=""/>
+
+            <p>京东商城</p>
+        </a>
+    </div>
+</section>
+<footer>
+    <div class="footer-login clearfix">
+        <div class="foot-log">登录</div>
+        <div class="foot-register">注册</div>
+        <div class="foot-up"><span class=" glyphicon glyphicon-arrow-up"></span>返回顶部</div>
+    </div>
+    <p><span class="red">手机APP下载</span> 慢慢买手机版 -- 掌上比价平台 <br/>
+        m.manmanbuy.com</p>
+</footer>
+</body>
+</html>

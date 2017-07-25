@@ -1,0 +1,43 @@
+.tottleProduct {
+    width: 100%;
+    /*margin-top: 5px;*/
+    margin-bottom: 20px;
+}
+.tottleProduct ul {
+    width: 100%;
+    margin: 0;
+}
+.tottleProduct h4 {
+    line-height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin: 0;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #ccc;
+}
+.tottleProduct a,.tottleProduct a:link,.tottleProduct a:visited {
+    display: block;
+    text-decoration: none;
+    text-underline: none;
+    color: #000;
+}
+.tottleProduct ul li {
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    /*margin: 0 0 -1px -1px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    white-space:nowrap;
+    border-top: none;
+    border-left: none;
+}
+.productlist{
+    position: relative;
+}
+.productlist span {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}

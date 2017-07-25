@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=" "/>
+    <!--如果是IE，会使用最新的渲染引擎进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/gsproduct.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/template.js"></script>
+    <script type="text/javascript" src="./js/gsproduct.js"></script>
+    <!--shop-->
+    <script type="text/html" id="getgsshop-con">
+        {{each result as value}}
+        <li class="nav-shop" shopId={{value.shopId}}>{{value.shopName}}</li>
+        {{/each}}
+    </script>
+    <!--area-->
+    <script type="text/html" id="getgsshoparea-con">
+        {{each result as value}}
+        <li class="nav-area" areaid={{value.areaId}}>{{value.areaName}}</li>
+        {{/each}}
+    </script>
+
+    <title>慢慢买</title>
+
+    <script type="text/html" id="getgsproduct-con">
+        {{each result as value}}
+        <li productId={{value.productId}}>
+            <img src="{{value.productImg}}" alt="西域美农新疆特产五星和田红枣250g*2">
+
+            <div>
+                <p>{{value.productName}}</p>
+                <span>{{value.productPrice}}</span>
+                <s>去凑单</s>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <title>慢慢买</title>
+</head>
+<body>
+<header>
+    <a href="javascript:void(0)" class="back">
+        <span>&lt;</span>
+
+        <p>凑单品</p>
+    </a>
+    <a href="javascript:void(0)" class="appDown"><img src="./images/header_app.png" alt="" class="header_app"/></a>
+</header>
+<nav class="nav">
+    <ul>
+        <li class="nav-shop-t">京东</li>
+        <li class="nav-area-t">华北（北京、山西等）</li>
+        <li class="nav-press-t">全部价格</li>
+        <li class="nav-search"> </li>
+    </ul>
+</nav>
+<nav class="nav-ex">
+    <ul class="nav-ex-shop" style="display: none">
+        <li class="nav-shop">京东</li>
+        <li class="nav-shop">京东</li>
+        <li class="nav-shop">京东</li>
+    </ul>
+    <ul class="nav-ex-area" style="display: none">
+        <li class="nav-area">华北（北京、山西等</li>
+        <li class="nav-area">华北（北京、山西等</li>
+        <li class="nav-area">华北（北京、山西等</li>
+    </ul>
+</nav>
+<section class="inlanddiscount-content clearfix">
+    <ul class="inland-ul clearfix">
+        <li productId=>
+            <img src="http://img10.360buyimg.com/n7/jfs/t577/85/103283769/55548/3ecfcbf8/5461b6e1N70e46439.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+            <div>
+                <p>廿一客(21cake)专用餐具 1人份(不单独配送)</p>
+                <span>¥0.50</span>
+                <s>去凑单</s>
+            </div>
+        </li>
+    </ul>
+
+</section>
+
+<!--底部-->
+<section class="logoin">
+    <ul>
+        <li><a href="#">注册登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#"> <i class="iconfont icon-xiangshang"></i>返回顶部</a></li>
+    </ul>
+    <p><span>手机APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+    <a href="#">m.manmanbuy.com</a>
+</section>
+<!--返回顶部-->
+<a href="#"></a>
+
+</body>
+</html>
